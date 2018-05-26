@@ -1,19 +1,20 @@
 """
 Created by Noah Jing Li (noah.jing.li@outlook.com) on May 26th, 2018
 """
+#!~/.conda/envs/tf/bin python2.7
 import itk
 import argparse
 import sys
+import numpy as np
 
-
-def usage():
+def Usage():
 	print("[ convert data type to .nii.gz ]")
 	print("example: python CommonTools.py --convert --input inputImage --output outputImage\n")	
 
 	print("[ display the image information ]")
 	print("example: python CommonTools.py --information --input inputImage\n")	
 
-def convert(input, output):
+def Convert(input, output):
 	image = itk.imread(input)
 	InputType = type(image)
 	input_dimension = image.GetImageDimension()
@@ -23,10 +24,33 @@ def convert(input, output):
 	itk.imwrite(castFilter, output)
 	print("\nConvert\t\tDONE!\n")
 
+def Information(input):
+	image = itk.imread(input)
+	print(image)
+	
+	PixelType = type(image)
+	Dimension = image.GetImageDimension()
+	origin = image.GetOrigin()
+	spacing = image.GetSpacing()
+	direction = image.GetDirection()
+	size = image.GetLargestPossibleRegion().GetSize()
 
+	print("PixelType = {}".format(PixelType))
+	print("Dimension = {}".format(Dimension))
+	print("origin = {}".format(origin))
+	print("spacing = {}".format(spacing))
+	print("direction = {}".format(direction))
+	print("size = {}".format(size))
+
+
+
+#####################################################################
 parser=argparse.ArgumentParser()
+
+# mode
 parser.add_argument('--usage', action='store_true', help='display usage')
 parser.add_argument('--convert', action='store_true', help='convert data type to .nii.gz')
+parser.add_argument('--information', action='store_true', help='display image information')
 
 # parameters
 parser.add_argument('--input', type=str, help='input file')
@@ -40,40 +64,13 @@ if len(sys.argv)==1:
 args=parser.parse_args()
 
 if args.usage == True:
-	usage()
+	Usage()
+
 elif args.convert == True:
 	print("input = {}".format(args.input))
 	print("output = {}".format(args.output))
-	convert(args.input, args.output)
+	Convert(args.input, args.output)
 
-
-
-
-# # import itk
-# import sys
-# import argparse
-
-# def print_help():
-# 	print("[ display the image information ]")
-# 	print("example: ImageTools --information --in inputImage\n]")	
-
-
-# # def main():
-
-# parser = argparse.ArgumentParser(description='CommonTools for medical image processing')
-# parser.add_argument('--help')
-# parser.add_argument('--phase', type=str, default="test",
-#                     help='configure file')
-
-# args = parser.parse_args()
-
-# if args.help == True:
-# 	print_help()
-
-# # ini_file = args.help
-# # print(ini_file)
-
-
-
-# # if __name__ == '__main__': 
-# #     main()
+elif args.information == True:
+	print("input = {}".format(args.input))
+	Information(args.input)
