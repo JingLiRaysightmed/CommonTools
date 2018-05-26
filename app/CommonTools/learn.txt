@@ -1,0 +1,499 @@
+xin@ruixin-GE62MVR-7RG:~/Projects/ParaspinalMuscle/Code/CommonTools/src/app/CommonTools$ git init
+Reinitialized existing Git repository in /home/ruixin/Projects/ParaspinalMuscle/Code/CommonTools/src/app/CommonTools/.git/
+ruixin@ruixin-GE62MVR-7RG:~/Projects/ParaspinalMuscle/Code/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/ParaspinalMuscle/Code/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/ParaspinalMuscle/Code/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/ParaspinalMuscle/Code/CommonTools/src/app/CommonTools$ ls
+CMakeLists.txt  ImageTools.cpp
+ruixin@ruixin-GE62MVR-7RG:~/Projects/ParaspinalMuscle/Code/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/ParaspinalMuscle/Code/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/ParaspinalMuscle/Code/CommonTools/src/app/CommonTools$ vim file.txtg
+ruixin@ruixin-GE62MVR-7RG:~/Projects/ParaspinalMuscle/Code/CommonTools/src/app/CommonTools$ vim file.txt
+ruixin@ruixin-GE62MVR-7RG:~/Projects/ParaspinalMuscle/Code/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/ParaspinalMuscle/Code/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/ParaspinalMuscle/Code/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/ParaspinalMuscle/Code/CommonTools/src/app/CommonTools$ cd /home/ruixin/Projects/CommonTools/src/app/CommonTools
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ ls
+CMakeLists.txt  file.txt  ImageTools.cpp
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ ll
+total 208
+drwxrwxrwx 2 ruixin ruixin   4096 May 25 21:25 ./
+drwxrwxrwx 3 ruixin ruixin   4096 Jan 16 18:39 ../
+-rwxrwxrwx 1 ruixin ruixin    388 May 25 17:47 CMakeLists.txt*
+-rw-rw-r-- 1 ruixin ruixin     16 May 25 21:23 file.txt
+-rwxrwxrwx 1 ruixin ruixin 196148 May 25 21:08 ImageTools.cpp*
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git init
+Initialized empty Git repository in /home/ruixin/Projects/CommonTools/src/app/CommonTools/.git/
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git config --global user.name "Noah Jing Li"
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git config --global user.email "jing.li@raysightmed.com"
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git config --list
+user.name=Noah Jing Li
+user.email=jing.li@raysightmed.com
+push.default=simple
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git init
+Reinitialized existing Git repository in /home/ruixin/Projects/CommonTools/src/app/CommonTools/.git/
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git add .
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   CMakeLists.txt
+	new file:   ImageTools.cpp
+	new file:   file.txt
+
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git commit
+[master (root-commit) 17f82d7] This is first submit
+ 3 files changed, 5746 insertions(+)
+ create mode 100755 CMakeLists.txt
+ create mode 100755 ImageTools.cpp
+ create mode 100644 file.txt
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ ll
+total 212
+drwxrwxrwx 3 ruixin ruixin   4096 May 25 21:26 ./
+drwxrwxrwx 3 ruixin ruixin   4096 Jan 16 18:39 ../
+-rwxrwxrwx 1 ruixin ruixin    388 May 25 17:47 CMakeLists.txt*
+-rw-rw-r-- 1 ruixin ruixin     16 May 25 21:23 file.txt
+drwxrwxr-x 8 ruixin ruixin   4096 May 25 21:40 .git/
+-rwxrwxrwx 1 ruixin ruixin 196148 May 25 21:08 ImageTools.cpp*
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ vim ImageTools.cpp 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ vim file.txt 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ImageTools.cpp
+	modified:   file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git add .
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   ImageTools.cpp
+	modified:   file.txt
+
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git commit -m "second submit"
+[master 5305ab4] second submit
+ 2 files changed, 2 insertions(+)
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ vim file2.txt
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ vim file.txt 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ vim ImageTools.cpp 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git add .
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git commit -m "add file2"
+[master 5d94db5] add file2
+ 3 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 file2.txt
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git status
+On branch master
+nothing to commit, working directory clean
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git log
+commit 5d94db5584088919e3226fa06116d627acdded63
+Author: Noah Jing Li <jing.li@raysightmed.com>
+Date:   Fri May 25 21:44:23 2018 +0800
+
+    add file2
+
+commit 5305ab4a89548c7707225241c0683fc67b8b6446
+Author: Noah Jing Li <jing.li@raysightmed.com>
+Date:   Fri May 25 21:43:15 2018 +0800
+
+    second submit
+
+commit 17f82d79e6b1075f175ef27efe4671bc4f26d5e2
+Author: Noah Jing Li <jing.li@raysightmed.com>
+Date:   Fri May 25 21:30:27 2018 +0800
+
+    This is first submit
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git checkout 5305a
+Note: checking out '5305a'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 5305ab4... second submit
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ vim ImageTools.cpp 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ vim file.txt 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git checkout -b branch1
+Switched to a new branch 'branch1'
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git log
+commit 5305ab4a89548c7707225241c0683fc67b8b6446
+Author: Noah Jing Li <jing.li@raysightmed.com>
+Date:   Fri May 25 21:43:15 2018 +0800
+
+    second submit
+
+commit 17f82d79e6b1075f175ef27efe4671bc4f26d5e2
+Author: Noah Jing Li <jing.li@raysightmed.com>
+Date:   Fri May 25 21:30:27 2018 +0800
+
+    This is first submit
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git status
+On branch branch1
+nothing to commit, working directory clean
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git checkout master
+Switched to branch 'master'
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git checkout branch1
+Switched to branch 'branch1'
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git add .
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git commit -m "file2 new add"
+[branch1 54f9d9f] file2 new add
+ 1 file changed, 1 insertion(+)
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git log
+commit 54f9d9f2a9b6f73440c36503eb4cbf8ad36746ea
+Author: Noah Jing Li <jing.li@raysightmed.com>
+Date:   Fri May 25 21:52:07 2018 +0800
+
+    file2 new add
+
+commit 5305ab4a89548c7707225241c0683fc67b8b6446
+Author: Noah Jing Li <jing.li@raysightmed.com>
+Date:   Fri May 25 21:43:15 2018 +0800
+
+    second submit
+
+commit 17f82d79e6b1075f175ef27efe4671bc4f26d5e2
+Author: Noah Jing Li <jing.li@raysightmed.com>
+Date:   Fri May 25 21:30:27 2018 +0800
+
+    This is first submit
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git checkout master
+Switched to branch 'master'
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git checkout branch1
+Switched to branch 'branch1'
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git remote add origin https://noahjingli.visualstudio.com/MyFirstProject/_git/test
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git remote -v
+origin	https://noahjingli.visualstudio.com/MyFirstProject/_git/test (fetch)
+origin	https://noahjingli.visualstudio.com/MyFirstProject/_git/test (push)
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git push -u origin --all
+Username for 'https://noahjingli.visualstudio.com': noahjingli
+Password for 'https://noahjingli@noahjingli.visualstudio.com': 
+Counting objects: 17, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (17/17), 22.44 KiB | 0 bytes/s, done.
+Total 17 (delta 4), reused 0 (delta 0)
+remote: We noticed you're using an older version of Git. For the best experience, upgrade to a newer version.
+remote: Analyzing objects... (17/17) (13 ms)
+remote: Storing packfile... done (197 ms)
+remote: Storing index... done (47 ms)
+To https://noahjingli.visualstudio.com/MyFirstProject/_git/test
+ * [new branch]      branch1 -> branch1
+ * [new branch]      master -> master
+Branch branch1 set up to track remote branch branch1 from origin.
+Branch master set up to track remote branch master from origin.
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ cd ./office/
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office$ git init
+Initialized empty Git repository in /home/ruixin/Projects/CommonTools/src/app/CommonTools/office/.git/
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office$ git clone https://noahjingli.visualstudio.com/MyFirstProject/_git/test
+Cloning into 'test'...
+Username for 'https://noahjingli.visualstudio.com': noahjingli
+Password for 'https://noahjingli@noahjingli.visualstudio.com': 
+remote: 
+remote:                    vSTs   
+remote:                  vSTSVSTSv
+remote:                vSTSVSTSVST
+remote: VSTS         vSTSVSTSVSTSV
+remote: VSTSVS     vSTSVSTSV STSVS
+remote: VSTSVSTSvsTSVSTSVS   TSVST
+remote: VS  tSVSTSVSTSv      STSVS
+remote: VS   tSVSTSVST       SVSTS
+remote: VS tSVSTSVSTSVSts    VSTSV
+remote: VSTSVST    SVSTSVSTs VSTSV
+remote: VSTSv        STSVSTSVSTSVS
+remote:                VSTSVSTSVST
+remote:                  VSTSVSTs
+remote:                    VSTs    (TM)
+remote: 
+remote:  Microsoft (R) Visual Studio (R) Team Services
+remote: 
+remote: We noticed you're using an older version of Git. For the best experience, upgrade to a newer version.
+remote: Found 17 objects to send. (108 ms)
+Unpacking objects: 100% (17/17), done.
+Checking connectivity... done.
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office$ git clone https://noahjingli.visualstudio.com/MyFirstProject/_git/test
+Cloning into 'test'...
+Username for 'https://noahjingli.visualstudio.com': noahjingli
+Password for 'https://noahjingli@noahjingli.visualstudio.com': 
+remote: 
+remote:                    vSTs   
+remote:                  vSTSVSTSv
+remote:                vSTSVSTSVST
+remote: VSTS         vSTSVSTSVSTSV
+remote: VSTSVS     vSTSVSTSV STSVS
+remote: VSTSVSTSvsTSVSTSVS   TSVST
+remote: VS  tSVSTSVSTSv      STSVS
+remote: VS   tSVSTSVST       SVSTS
+remote: VS tSVSTSVSTSVSts    VSTSV
+remote: VSTSVST    SVSTSVSTs VSTSV
+remote: VSTSv        STSVSTSVSTSVS
+remote:                VSTSVSTSVST
+remote:                  VSTSVSTs
+remote:                    VSTs    (TM)
+remote: 
+remote:  Microsoft (R) Visual Studio (R) Team Services
+remote: 
+remote: We noticed you're using an older version of Git. For the best experience, upgrade to a newer version.
+remote: Found 17 objects to send. (174 ms)
+Unpacking objects: 100% (17/17), done.
+Checking connectivity... done.
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office$ ll
+total 12
+drwxrwxr-x 3 ruixin ruixin 4096 May 25 22:22 ./
+drwxrwxrwx 4 ruixin ruixin 4096 May 25 22:19 ../
+drwxrwxr-x 3 ruixin ruixin 4096 May 25 22:22 test/
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office$ git clone https://noahjingli.visualstudio.com/MyFirstProject/_git/test newname
+Cloning into 'newname'...
+Username for 'https://noahjingli.visualstudio.com': jingli
+Password for 'https://jingli@noahjingli.visualstudio.com': 
+fatal: Authentication failed for 'https://noahjingli.visualstudio.com/MyFirstProject/_git/test/'
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office$ git clone https://noahjingli.visualstudio.com/MyFirstProject/_git/test newname
+Cloning into 'newname'...
+Username for 'https://noahjingli.visualstudio.com': noahjingli
+Password for 'https://noahjingli@noahjingli.visualstudio.com': 
+remote: 
+remote:                    vSTs   
+remote:                  vSTSVSTSv
+remote:                vSTSVSTSVST
+remote: VSTS         vSTSVSTSVSTSV
+remote: VSTSVS     vSTSVSTSV STSVS
+remote: VSTSVSTSvsTSVSTSVS   TSVST
+remote: VS  tSVSTSVSTSv      STSVS
+remote: VS   tSVSTSVST       SVSTS
+remote: VS tSVSTSVSTSVSts    VSTSV
+remote: VSTSVST    SVSTSVSTs VSTSV
+remote: VSTSv        STSVSTSVSTSVS
+remote:                VSTSVSTSVST
+remote:                  VSTSVSTs
+remote:                    VSTs    (TM)
+remote: 
+remote:  Microsoft (R) Visual Studio (R) Team Services
+remote: 
+remote: We noticed you're using an older version of Git. For the best experience, upgrade to a newer version.
+remote: Found 17 objects to send. (90 ms)
+Unpacking objects: 100% (17/17), done.
+Checking connectivity... done.
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office$ cd ./newname/
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ ll
+total 216
+drwxrwxr-x 3 ruixin ruixin   4096 May 25 22:26 ./
+drwxrwxr-x 4 ruixin ruixin   4096 May 25 22:26 ../
+-rwxrwxr-x 1 ruixin ruixin    388 May 25 22:26 CMakeLists.txt*
+-rw-rw-r-- 1 ruixin ruixin     14 May 25 22:26 file2.txt
+-rw-rw-r-- 1 ruixin ruixin     31 May 25 22:26 file.txt
+drwxrwxr-x 8 ruixin ruixin   4096 May 25 22:26 .git/
+-rwxrwxr-x 1 ruixin ruixin 196163 May 25 22:26 ImageTools.cpp*
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ vim ImageTools.cpp 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ git add .
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ git commit -m "revise error"
+[master a96ee2b] revise error
+ 1 file changed, 3 deletions(-)
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ git push --all
+Username for 'https://noahjingli.visualstudio.com': noahjingli
+Password for 'https://noahjingli@noahjingli.visualstudio.com': 
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 306 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: We noticed you're using an older version of Git. For the best experience, upgrade to a newer version.
+remote: Analyzing objects... (3/3) (7 ms)
+remote: Storing packfile... done (225 ms)
+remote: Storing index... done (34 ms)
+To https://noahjingli.visualstudio.com/MyFirstProject/_git/test
+   5d94db5..a96ee2b  master -> master
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ vim file4.txt
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ git add .
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ git commit -m "add file4"
+[master d5094ae] add file4
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file4.txt
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ git push --all
+Username for 'https://noahjingli.visualstudio.com': noahjingli
+Password for 'https://noahjingli@noahjingli.visualstudio.com': 
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 281 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: We noticed you're using an older version of Git. For the best experience, upgrade to a newer version.
+remote: Analyzing objects... (3/3) (101 ms)
+remote: Storing packfile... done (83 ms)
+remote: Storing index... done (84 ms)
+To https://noahjingli.visualstudio.com/MyFirstProject/_git/test
+   a96ee2b..d5094ae  master -> master
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office/newname$ cd ..
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office$ cd ..
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ ls
+CMakeLists.txt  file.txt  ImageTools.cpp  office
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ cd ./office/
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office$ ls
+newname  test
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools/office$ cd ..
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ ls
+CMakeLists.txt  file.txt  ImageTools.cpp  office
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ ll
+total 216
+drwxrwxrwx 4 ruixin ruixin   4096 May 25 22:19 ./
+drwxrwxrwx 3 ruixin ruixin   4096 Jan 16 18:39 ../
+-rwxrwxrwx 1 ruixin ruixin    388 May 25 17:47 CMakeLists.txt*
+-rw-rw-r-- 1 ruixin ruixin     35 May 25 21:53 file.txt
+drwxrwxr-x 8 ruixin ruixin   4096 May 25 22:16 .git/
+-rwxrwxr-x 1 ruixin ruixin 196158 May 25 21:53 ImageTools.cpp*
+drwxrwxr-x 4 ruixin ruixin   4096 May 25 22:26 office/
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git pull
+
+Username for 'https://noahjingli.visualstudio.com': Password for 'https://noahjingli.visualstudio.com': 
+fatal: Authentication failed for 'https://noahjingli.visualstudio.com/MyFirstProject/_git/test/'
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git pull
+Username for 'https://noahjingli.visualstudio.com': jing.li@raysightmed.com
+Password for 'https://jing.li@raysightmed.com@noahjingli.visualstudio.com': 
+fatal: Authentication failed for 'https://noahjingli.visualstudio.com/MyFirstProject/_git/test/'
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git pull
+Username for 'https://noahjingli.visualstudio.com': noah.jing.li@outlook.com
+Password for 'https://noah.jing.li@outlook.com@noahjingli.visualstudio.com': 
+remote: Microsoft (R) Visual Studio (R) Team Services
+remote: We noticed you're using an older version of Git. For the best experience, upgrade to a newer version.
+remote: Found 6 objects to send. (7 ms)
+Unpacking objects: 100% (6/6), done.
+From https://noahjingli.visualstudio.com/MyFirstProject/_git/test
+   5d94db5..d5094ae  master     -> origin/master
+Already up-to-date.
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ ll
+total 216
+drwxrwxrwx 4 ruixin ruixin   4096 May 25 22:19 ./
+drwxrwxrwx 3 ruixin ruixin   4096 Jan 16 18:39 ../
+-rwxrwxrwx 1 ruixin ruixin    388 May 25 17:47 CMakeLists.txt*
+-rw-rw-r-- 1 ruixin ruixin     35 May 25 21:53 file.txt
+drwxrwxr-x 8 ruixin ruixin   4096 May 25 22:32 .git/
+-rwxrwxr-x 1 ruixin ruixin 196158 May 25 21:53 ImageTools.cpp*
+drwxrwxr-x 4 ruixin ruixin   4096 May 25 22:26 office/
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git status
+On branch branch1
+Your branch is up-to-date with 'origin/branch1'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	office/
+
+nothing added to commit but untracked files present (use "git add" to track)
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ ll
+total 216
+drwxrwxrwx 4 ruixin ruixin   4096 May 25 22:19 ./
+drwxrwxrwx 3 ruixin ruixin   4096 Jan 16 18:39 ../
+-rwxrwxrwx 1 ruixin ruixin    388 May 25 17:47 CMakeLists.txt*
+-rw-rw-r-- 1 ruixin ruixin     35 May 25 21:53 file.txt
+drwxrwxr-x 8 ruixin ruixin   4096 May 25 22:33 .git/
+-rwxrwxr-x 1 ruixin ruixin 196158 May 25 21:53 ImageTools.cpp*
+drwxrwxr-x 4 ruixin ruixin   4096 May 25 22:26 office/
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ 
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git checkout master
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+ruixin@ruixin-GE62MVR-7RG:~/Projects/CommonTools/src/app/CommonTools$ git pull
+Username for 'https://noahjingli.visualstudio.com': noahjingli
+Password for 'https://noahjingli@noahjingli.visualstudio.com': 
+Updating 5d94db5..d5094ae
+Fast-forward
+ ImageTools.cpp | 3 ---
+ file4.txt      | 1 +
+ 2 files changed, 1 insertion(+), 3 deletions(-)
+ create mode 100644 file4.txt
+
