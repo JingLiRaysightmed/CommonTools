@@ -1,5 +1,5 @@
 ##################################################################
-# Common tools using in IPMI
+# Common tools for medical image processing
 project(IPMI)
    
 cmake_minimum_required(VERSION 2.6)
