@@ -4,10 +4,10 @@ Created by Noah Jing Li (noah.jing.li@outlook.com) on May 26th, 2018
 #!~/.conda/envs/tf/bin python2.7
 from __future__ import division
 import itk
-import SimpleITK as sitk
 import argparse
 import sys
 import numpy as np
+# import SimpleITK as sitk
 
 def Usage():
 	print("[ convert data type to .nii.gz ]")
@@ -22,6 +22,9 @@ def Usage():
 	print("[ generate the segmentation ]")
 	print("example: python CommonTools.py --generate_segment --in probabilityMap --threshold value --out segmentationImage\n")
 
+	print("[ get bounding box ]")
+	print("example: ImageTools --boundingbox --in inputImage --start_pt filename --end_pt filename\n")
+
 def Convert(input, output):
 	image = itk.imread(input)
 	InputType = type(image)
@@ -30,7 +33,7 @@ def Convert(input, output):
 	castFilter = itk.CastImageFilter[InputType, OutputType].New()
 	castFilter.SetInput(image)
 	itk.imwrite(castFilter, output)
-	print("\nConvert\t\tDONE!\n")
+	print("Convert\tDONE!")
 
 def Information(input):
 	image = itk.imread(input)
@@ -49,6 +52,7 @@ def Information(input):
 	print("spacing = {}".format(spacing))
 	print("direction = {}".format(direction))
 	print("size = {}".format(size))
+	print("Information\tDONE!")
 
 def ResampleSelf(input, output, spacing):
 	"""
@@ -100,16 +104,16 @@ def ResampleSelf(input, output, spacing):
 	resampleFilter.SetInput(image)
 
 	itk.imwrite(resampleFilter.GetOutput(), output)
+	print("ResampleSelf\tDONE!")
 
-"""
-//Goal: generate the segmentation based on different label's probability map
-//Step: 1. load foreground probability map
-//		2. compare the value of probability map with threshold and set the label to label map
-//		3. output the label map to file
-"""
 def GenegrateSegment(input, threshold, output):
-
-	# //1. load two probability map
+	"""
+	//Goal: generate the segmentation based on different label's probability map
+	//Step: 1. load foreground probability map
+	//		2. compare the value of probability map with threshold and set the label to label map
+	//		3. output the label map to file
+	"""
+	# 1. load two probability map
 	PixelType = itk.ctype("float")
 	image = itk.imread(input, PixelType)
 	ImageType = type(image)
@@ -117,7 +121,7 @@ def GenegrateSegment(input, threshold, output):
 	size = image.GetLargestPossibleRegion().GetSize()
 	print("size = {}".format(size))
 
-	# //2. compare the value of probability map with threshold and set the label to label map
+	# 2. compare the value of probability map with threshold and set the label to label map
 	np_img = itk.GetArrayFromImage(image)
 	print("np_img.shape = {}".format(np_img.shape))
 
@@ -129,9 +133,9 @@ def GenegrateSegment(input, threshold, output):
 	itk_seg_img = itk.GetImageFromArray(seg_img)
 	print("itk_seg_img.shape = {}".format(itk_seg_img.GetLargestPossibleRegion().GetSize()))
 	print(type(image))
-
 	itk.imwrite(itk_seg_img, output)
 
+	print("GenegrateSegment\tDONE!")
 
 #####################################################################
 parser=argparse.ArgumentParser()
@@ -142,18 +146,22 @@ parser.add_argument('--convert', action='store_true', help='convert data type to
 parser.add_argument('--information', action='store_true', help='display image information')
 parser.add_argument('--resample_self', action='store_true', help='resample image')
 parser.add_argument('--generate_segment', action='store_true', help='resample image')
+parser.add_argument('--boundingbox', action='store_true', help='resample image')
+
 
 # parameters
 parser.add_argument('--input', type=str, help='input file')
 parser.add_argument('--output', type=str, help='output file')
 parser.add_argument('--spacing', type=float, default=1, help='spacing')
 parser.add_argument('--threshold', type=float, default=0.75, help='threshold')
+parser.add_argument('--start_pt', type=str, help='start_pt')
+parser.add_argument('--end_pt', type=str, help='end_pt')
 
-if len(sys.argv)==1:
+if len(sys.argv) == 1:
 	parser.print_help(sys.stderr)
 	sys.exit(1)
 
-args=parser.parse_args()
+args = parser.parse_args()
 
 if args.usage == True:
 	Usage()
